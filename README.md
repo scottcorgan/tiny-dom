@@ -9,7 +9,7 @@ A tiny (less than 200 bytes) DOM parser. Works as a standalone or with [Browseri
 NPM
  
 ```
-npm install tiny-dom-parser --save
+npm install tiny-dom --save
 ```
 
 Bower
