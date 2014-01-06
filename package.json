@@ -1,0 +1,49 @@
+{
+  "name": "tiny-dom",
+  "version": "0.1.0",
+  "description": "A tiny (less than 200 bytes) DOM parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/testling | node_modules/.bin/tspec",
+    "bundle": "node_modules/.bin/browserify index.js > dist/tinydom.js -s tinyDom && echo 'Bundled'",
+    "minify": "node_modules/.bin/uglifyjs dist/tinydom.js -o dist/tinydom.min.js -m && echo 'Minified'",
+    "build": "npm test && npm run bundle && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottcorgan/tiny-dom.git"
+  },
+  "keywords": [
+    "dom",
+    "parser",
+    "tiny"
+  ],
+  "author": "Scott Corgan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottcorgan/tiny-dom/issues"
+  },
+  "devDependencies": {
+    "tape": "~2.3.2",
+    "testling": "~1.5.6",
+    "tap-spec": "~0.1.3",
+    "browserify": "~3.19.0",
+    "uglify-js": "~2.4.8"
+  },
+  "testling": {
+    "files": [
+      "test/index.js"
+    ],
+    "browsers": [
+      "iexplore/10.0",
+      "iexplore/9.0",
+      "iexplore/8.0",
+      "firefox/16..latest",
+      "chrome/22..latest",
+      "safari/5.1..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
+    ]
+  }
+}

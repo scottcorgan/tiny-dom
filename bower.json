@@ -1,0 +1,26 @@
+{
+  "name": "tiny-dom",
+  "main": "dist/tinydom.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/scottcorgan/tiny-dom",
+  "authors": [
+    "Scott Corgan <scottcorgan@gmail.com>"
+  ],
+  "description": "A tiny (less than 200 bytes) DOM parser",
+  "keywords": [
+    "tiny",
+    "dom",
+    "parser"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".gitignore",
+    "index.js",
+    "package.json"
+  ]
+}
