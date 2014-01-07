@@ -1,13 +1,13 @@
 # tiny-dom-parser
- 
+
 A tiny (less than 200 bytes) DOM parser. Works as a standalone or with [Browserify](http://browserify.org).
 
 [![browser support](https://ci.testling.com/scottcorgan/tiny-dom.png)](https://ci.testling.com/scottcorgan/tiny-dom)
- 
+
 ## Install
 
 NPM
- 
+
 ```
 npm install tiny-dom --save
 ```
@@ -43,11 +43,11 @@ var dom = require('tiny-dom');
 var el = dom('<ul id="tiny-dom"><li>1</li></ul>');
 document.body.appendChild(el);
 ```
- 
+
 ## Run Tests
- 
-Requires [Phantomjs](phantomjs.org/download.html) is installed
- 
+
+Requires [Phantomjs](http://phantomjs.org/download.html) is installed
+
 ```
 npm install
 npm test
